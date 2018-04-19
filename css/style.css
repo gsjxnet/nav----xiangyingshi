@@ -1,0 +1,234 @@
+
+@media (max-width:1200px) {
+	body.modal-open-w {
+	overflow:hidden;
+	position:relative;
+	height:100%
+}
+}
+#nav {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	padding-top:3.2rem;
+	padding-bottom:3.2rem;
+	z-index:10;
+	transition:transform 0.5s,padding 0.5s,background 0.5s;
+	background-color:transparent
+}
+#nav .container {
+	width:98%
+}
+@media (min-width:1700px) {
+	#nav .container {
+	width:85.6%;
+	max-width:none
+}
+}#nav img {
+	max-width:100%;
+	width:auto
+}
+@media (min-width:1201px) {
+	#nav #menu-outer {
+	position:absolute;
+	left:50%;
+	transform:translate(-50%,0);
+	display:block !important
+}
+}@media (max-width:1200px) {
+	#nav #menu-outer {
+	position:fixed;
+	background-color:#fff;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	display:none
+}
+#nav #menu-outer .flex-c {
+	position:absolute;
+	top:30px;
+	left:0;
+	bottom:30px;
+	right:0;
+	display:flex;
+	flex-wrap:wrap;
+	overflow-y:auto
+}
+#nav #menu-outer .menu-inner {
+	margin:auto
+}
+#nav #menu-outer .menu-c {
+	justify-content:space-around;
+	flex-direction:column
+}
+}#nav #menu-outer .menu-c {
+	padding:0;
+	margin:0;
+	left:0
+}
+@media (max-width:1200px) {
+	#nav #menu-outer .menu-c {
+	padding-bottom:1rem
+}
+}#nav #menu-outer .menu-c li {
+	margin:0 0.7rem;
+	position:relative;
+	font-size:1.05rem;
+	font-family:"Camphor Pro";
+	color:#949FA4;
+	font-weight:bold;
+	float: left;
+}
+#nav #menu-outer .menu-c li:before {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	border-radius:0;
+	left:0;
+	margin:0;
+	transform:none;
+	top:auto;
+	height:0.2rem;
+	background-color:transparent;
+	border:0
+}
+@media (max-width:1200px) {
+	#nav #menu-outer .menu-c li:before {
+	bottom:auto;
+	top:2.3rem
+}
+}#nav #menu-outer .menu-c li a {
+	color:#949FA4;
+	letter-spacing:1px;
+	padding:0.3rem .75rem;
+	display:block;
+	text-align:center
+}
+#nav #menu-outer .menu-c li a:hover {
+	color:#363b3d
+}
+#nav #menu-outer .menu-c li.active:before {
+	background-color:#94bd3b
+}
+#nav #menu-outer .menu-c li .sub-menu {
+	padding:0;
+	margin:0;
+	background-color:#fff;
+	padding-top:20px;
+	padding-bottom:20px;
+	display:none
+}
+@media (min-width:1201px) {
+	#nav #menu-outer .menu-c li .sub-menu {
+	box-shadow:1px 1px 10px #94bd3b;
+	position:absolute;
+	top:100%;
+	transform:translate(-50%,0);
+	left:50%
+}
+}#nav #menu-outer .menu-c li .sub-menu li {
+	margin:0 1rem
+}
+#nav #menu-outer .menu-c li .sub-menu li a {
+	white-space:nowrap
+}
+#nav #menu-outer .two-btn {
+	display:none
+}
+
+@media (max-width:1200px) {
+	#nav {
+	padding-top:1rem;
+	padding-bottom:1rem;
+	background:rgba(255,255,255,0.6)
+}
+#nav img {
+	width:250px
+}
+}
+
+
+
+
+// 按钮点击旋转开始
+#hamburger {
+	z-index:2;
+	transition:all .3s;
+	position:relative;
+	width:37px;
+	height:28px
+}
+@media (min-width:1201px) {
+#hamburger {
+	display:none
+}
+}
+#hamburger:hover {
+	cursor:pointer
+}
+#hamburger span {
+	display:block;
+	background-color:#94bd3b;
+	width:37px;
+	height:.15em;
+	border-radius:1px;
+	position:absolute;
+	transition:all 0.3s
+}
+#hamburger:hover span {
+	background-color:#363b3d
+}
+#hamburger span:first-child {
+	top:0;
+	left:0;
+	transition:All 0.3s ease-in-out;
+	-webkit-transition:All 0.3s ease-in-out;
+	-moz-transition:All 0.3s ease-in-out;
+	-o-transition:All 0.3s ease-in-out
+}
+#hamburger span:nth-child(2) {
+	top:8px;
+	left:0;
+	transition:All 0.3s ease-in-out;
+	-webkit-transition:All 0.3s ease-in-out;
+	-moz-transition:All 0.3s ease-in-out;
+	-o-transition:All 0.3s ease-in-out
+}
+#hamburger span:last-child {
+	top:16px;
+	left:0;
+	transition:All 0.3s ease-in-out;
+	-webkit-transition:All 0.3s ease-in-out;
+	-moz-transition:All 0.3s ease-in-out;
+	-o-transition:All 0.3s ease-in-out
+}
+#hamburger.active span:first-child {
+	transform:rotate(-45deg);
+	top:8px
+}
+#hamburger.active span:nth-child(2) {
+	background-color:transparent !important
+}
+#hamburger.active span:last-child {
+	transform:rotate(45deg);
+	top:8px
+}
+// 按钮点击旋转结束
+
+
+
+@media (max-width:1199px) {
+	.btn {
+	min-width:13rem
+}
+}
+
+.is-hidden {
+	transform:translate3d(0,-100%,0);//增加高度执行动画
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
